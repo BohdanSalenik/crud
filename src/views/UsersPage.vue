@@ -36,7 +36,12 @@ export default {
   },
   methods: {
     loadUsers() {
-      this.$store.state.users = JSON.parse(this.url);
+      const prepUsers = JSON.parse(this.url).map(user => ({
+              ...user,
+              name: user.name.split(" ")[0],
+              surname: user.name.split(" ")[1]
+            }))
+      this.$store.state.users = prepUsers;
       this.url = "";
     },
     onSubmit() {
