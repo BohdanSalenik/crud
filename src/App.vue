@@ -5,15 +5,15 @@
       <li>
         <router-link 
           class="active btn btn-primary" 
-          to="/"
+          to="/crud/"
         >
-          Home
+          Users page
         </router-link>
       </li>
       <li>
         <router-link 
           class="active btn btn-primary" 
-          to="/users"
+          to="/crud/users"
         >
           Add users
         </router-link

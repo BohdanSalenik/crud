@@ -8,11 +8,11 @@ export default new Router({
   mode: 'hash',
   routes: [
     {
-      path: '/',
+      path: '/crud',
       component: Home,
     },
     {
-      path: '/users',
+      path: '/crud/users',
       component: () => import('./views/UsersPage.vue'),
     }
   ]
